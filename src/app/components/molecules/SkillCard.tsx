@@ -1,13 +1,21 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export function SkillCard({
+type SkillCardProps = {
+  icon: React.ElementType; // Icon component
+  title: string;
+  description: string;
+  gradient: string; // CSS gradient string
+  delay?: number; // optional
+};
+
+export const SkillCard: React.FC<SkillCardProps> = ({
   icon: Icon,
   title,
   description,
   gradient,
   delay = 0,
-}) {
+}) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 40 }}
@@ -46,4 +54,4 @@ export function SkillCard({
       </div>
     </motion.div>
   );
-}
+};

@@ -1,6 +1,16 @@
 import React from "react";
 
-export function SkillChip({ name, icon: Icon, level }) {
+type SkillChipProps = {
+  name: string;
+  icon: React.ElementType; // Icon component
+  level: number; // 0 to 5
+};
+
+export const SkillChip: React.FC<SkillChipProps> = ({
+  name,
+  icon: Icon,
+  level,
+}) => {
   return (
     <div className="flex flex-col items-center justify-center p-4 rounded-xl bg-white shadow hover:shadow-lg transition">
       <Icon size={28} className="text-blue-500 mb-2" />
@@ -19,4 +29,4 @@ export function SkillChip({ name, icon: Icon, level }) {
       </div>
     </div>
   );
-}
+};
