@@ -67,7 +67,7 @@ export function Hero() {
     variant="blue-violet"
     className="block text-4xl sm:text-5xl md:text-6xl mt-2"
   >
-    Vimal B
+    Vimal Boominathan
   </GradientText>
 
 </motion.h1>
