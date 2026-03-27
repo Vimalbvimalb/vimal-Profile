@@ -18,5 +18,5 @@ export const sendContact = async (data: {
     throw new Error("Failed to send message");
   }
 
-  return res.json();
+  return res;
 };
