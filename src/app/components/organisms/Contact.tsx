@@ -76,7 +76,7 @@ export function Contact() {
     {
       icon: MapPin,
       label: 'Location',
-      value: 'Tiruvannamalai, Tamil Nadu',
+      value: 'Coimbatore, Tamil Nadu',
       href: '#',
       color: '#7C3AED'
     }

@@ -30,6 +30,19 @@ export function Projects() {
       ],
       githubUrl: 'https://github.com/Vimalbvimalb/react-weather-app',
       liveUrl: 'https://vweather2025.web.app/'
+    },
+    {
+      title: 'EduMee Education Platform',
+      description:
+        'Built an education platform using React, TypeScript, and Material UI. The site focuses on course discovery, user-friendly learning paths, and responsive layout for learners.',
+      image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg',
+      tags: [
+        { name: 'React', color: 'blue' as const },
+        { name: 'TypeScript', color: 'emerald' as const },
+        { name: 'Material UI', color: 'violet' as const }
+      ],
+      githubUrl: '',
+      liveUrl: 'https://mysoaring.com/products/edumee'
     }
   ];
 

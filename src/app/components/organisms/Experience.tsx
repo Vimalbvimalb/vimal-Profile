@@ -9,8 +9,16 @@ export function Experience() {
       year: '2026 - Present',
       title: 'Junior Full-Stack Developer',
       company: 'My Soaring',
-      description:
-       'Actively developing modern web applications while continuously improving my full-stack development skills and contributing to efficient digital solutions.',
+      description: [
+        'Developed scalable web applications using React and Material UI.',
+        'Designed and implemented RESTful APIs using NestJS.',
+        'Built reusable UI components for better maintainability.',
+        'Implemented JWT authentication and Role-Based Access Control (RBAC).',
+        'Optimized PostgreSQL queries for improved performance.',
+        'Integrated frontend and backend systems efficiently.',
+        'Participated in code reviews and followed best development practices.',
+        'Resolved production issues and improved application stability.'
+      ],
       color: '#2563EB'
     },
   ];

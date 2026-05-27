@@ -83,7 +83,32 @@ export function ProjectCard({
       <div className="p-6">
         <h3 className="text-xl font-semibold mb-2 text-gray-900">{title}</h3>
         <p className="text-gray-600 mb-4 leading-relaxed">{description}</p>
-        
+
+        <div className="flex flex-wrap items-center gap-3 mb-4">
+          {liveUrl && (
+            <a
+              href={liveUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 text-white text-sm font-medium hover:bg-slate-800 transition"
+            >
+              <ExternalLink className="w-4 h-4" />
+              Live Demo
+            </a>
+          )}
+          {githubUrl && (
+            <a
+              href={githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-300 text-slate-900 text-sm font-medium hover:bg-slate-100 transition"
+            >
+              <Github className="w-4 h-4" />
+              View Code
+            </a>
+          )}
+        </div>
+
         {/* Tags */}
         <div className="flex flex-wrap gap-2">
           {tags.map((tag, index) => (

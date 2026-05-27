@@ -5,7 +5,7 @@ interface TimelineItemProps {
   year: string;
   title: string;
   company: string;
-  description: string;
+  description: string | string[];
   color: string;
   delay?: number;
 }
@@ -50,7 +50,15 @@ export function TimelineItem({
         
         <h4 className="text-lg font-semibold text-gray-900 mb-1">{title}</h4>
         <p className="text-[#2563EB] font-medium mb-3">{company}</p>
-        <p className="text-gray-600 leading-relaxed">{description}</p>
+        {Array.isArray(description) ? (
+          <ul className="list-disc list-inside space-y-2 text-gray-600 leading-relaxed">
+            {description.map((item, idx) => (
+              <li key={idx}>{item}</li>
+            ))}
+          </ul>
+        ) : (
+          <p className="text-gray-600 leading-relaxed">{description}</p>
+        )}
       </div>
     </motion.div>
   );
